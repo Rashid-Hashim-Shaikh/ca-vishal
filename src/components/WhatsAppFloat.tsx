@@ -6,7 +6,7 @@ const WhatsAppFloat = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '919876543210'; // Remove + and spaces for WhatsApp URL
+    const phoneNumber = '917021089901'; // Remove + and spaces for WhatsApp URL
     const message = 'Hello! I would like to inquire about your financial services from CA Vishal Singh & Associates.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
