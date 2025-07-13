@@ -7,7 +7,7 @@ const BackToTop = () => {
 
   // Show button when page is scrolled
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 200) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -33,12 +33,12 @@ const BackToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-coral-red text-white shadow-lg hover:bg-opacity-80 transition-all duration-300 focus:outline-none"
+          className="fixed bottom-8 right-8 z-50 p-4 rounded-full bg-gray-600 text-white shadow-xl hover:bg-gray-700 hover:shadow-2xl transition-all duration-300 focus:outline-none "
           aria-label="Back to top"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-7 w-7"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
